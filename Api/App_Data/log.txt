@@ -1,0 +1,309 @@
+5/24/2021 11:30:40 AM:::
+Portal
+5/24/2021 11:30:40 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:33:27 AM:::
+Portal
+5/24/2021 11:33:27 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:38:45 AM:::
+Portal
+5/24/2021 11:38:45 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:38:57 AM:::
+Portal
+5/24/2021 11:38:57 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:40:52 AM:::
+Portal
+5/24/2021 11:40:52 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:41:31 AM:::
+Portal
+5/24/2021 11:41:31 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:43:28 AM:::
+*****HomeGraph*****
+5/24/2021 11:43:35 AM:::HomeGraph Header: cb04e04ae4492aa257b26e1a7b83cfef
+5/24/2021 11:43:36 AM:::HomeGraph Input:
+{
+  "inputs": [
+    {
+      "context": {
+        "locale_country": "US",
+        "locale_language": "en"
+      },
+      "intent": "action.devices.EXECUTE",
+      "payload": {
+        "commands": [
+          {
+            "devices": [
+              {
+                "customData": {
+                  "barValue": true,
+                  "bazValue": "SC",
+                  "fooValue": 74
+                },
+                "id": "53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="
+              }
+            ],
+            "execution": [
+              {
+                "command": "action.devices.commands.ActivateScene",
+                "params": {
+                  "deactivate": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "9909898996246516110"
+}
+5/24/2021 11:43:37 AM:::Checking token in header
+5/24/2021 11:45:13 AM:::HomeGraph Error: System.Data.Entity.Core.EntityException: The underlying provider failed on Open. ---> System.Data.SqlClient.SqlException: A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: TCP Provider, error: 0 - The wait operation timed out.) ---> System.ComponentModel.Win32Exception: The wait operation timed out
+   --- End of inner exception stack trace ---
+   at System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   at System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   at System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   at System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   at System.Data.SqlClient.SqlConnection.Open()
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.<Open>b__36(DbConnection t, DbConnectionInterceptionContext c)
+   at System.Data.Entity.Infrastructure.Interception.InternalDispatcher`1.Dispatch[TTarget,TInterceptionContext](TTarget target, Action`2 operation, TInterceptionContext interceptionContext, Action`3 executing, Action`3 executed)
+   at System.Data.Entity.Infrastructure.Interception.DbConnectionDispatcher.Open(DbConnection connection, DbInterceptionContext interceptionContext)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.<Open>b__2()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.<>c__DisplayClass1.<Execute>b__0()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute(Action operation)
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   --- End of inner exception stack trace ---
+   at System.Data.Entity.Core.EntityClient.EntityConnection.Open()
+   at System.Data.Entity.Core.Objects.ObjectContext.EnsureConnection(Boolean shouldMonitorTransactions)
+   at System.Data.Entity.Core.Objects.ObjectContext.ExecuteInTransaction[T](Func`1 func, IDbExecutionStrategy executionStrategy, Boolean startLocalTransaction, Boolean releaseConnectionOnSuccess)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<>c__DisplayClass7.<GetResults>b__5()
+   at System.Data.Entity.SqlServer.DefaultSqlExecutionStrategy.Execute[TResult](Func`1 operation)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.GetResults(Nullable`1 forMergeOption)
+   at System.Data.Entity.Core.Objects.ObjectQuery`1.<System.Collections.Generic.IEnumerable<T>.GetEnumerator>b__0()
+   at System.Data.Entity.Internal.LazyEnumerator`1.MoveNext()
+   at System.Collections.Generic.List`1..ctor(IEnumerable`1 collection)
+   at System.Linq.Enumerable.ToList[TSource](IEnumerable`1 source)
+   at Api.Controllers.HomeGraphController.Post(Object value) in E:\Working\Project\SoftwareACIS\02WebService\assist_tp_web_api\Api\Controllers\HomeGraphController.cs:line 63
+5/24/2021 11:45:40 AM:::
+*****HomeGraph*****
+5/24/2021 11:45:43 AM:::HomeGraph Header: cb04e04ae4492aa257b26e1a7b83cfef
+5/24/2021 11:45:43 AM:::HomeGraph Input:
+{
+  "inputs": [
+    {
+      "context": {
+        "locale_country": "US",
+        "locale_language": "en"
+      },
+      "intent": "action.devices.EXECUTE",
+      "payload": {
+        "commands": [
+          {
+            "devices": [
+              {
+                "customData": {
+                  "barValue": true,
+                  "bazValue": "SC",
+                  "fooValue": 74
+                },
+                "id": "53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="
+              }
+            ],
+            "execution": [
+              {
+                "command": "action.devices.commands.ActivateScene",
+                "params": {
+                  "deactivate": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "9909898996246516110"
+}
+5/24/2021 11:45:44 AM:::Checking token in header
+5/24/2021 11:45:47 AM:::Checking third party is valid
+5/24/2021 11:46:18 AM:::HomeGraph Execute device id: 88|00022231|MCE|1465|6
+5/24/2021 11:46:28 AM:::Error: Dont have device to control!!!
+5/24/2021 11:46:41 AM:::
+*****HomeGraph*****
+5/24/2021 11:46:43 AM:::HomeGraph Header: cb04e04ae4492aa257b26e1a7b83cfef
+5/24/2021 11:46:43 AM:::HomeGraph Input:
+{
+  "inputs": [
+    {
+      "context": {
+        "locale_country": "US",
+        "locale_language": "en"
+      },
+      "intent": "action.devices.EXECUTE",
+      "payload": {
+        "commands": [
+          {
+            "devices": [
+              {
+                "customData": {
+                  "barValue": true,
+                  "bazValue": "SC",
+                  "fooValue": 74
+                },
+                "id": "53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="
+              }
+            ],
+            "execution": [
+              {
+                "command": "action.devices.commands.ActivateScene",
+                "params": {
+                  "deactivate": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "9909898996246516110"
+}
+5/24/2021 11:46:44 AM:::Checking token in header
+5/24/2021 11:46:46 AM:::Checking third party is valid
+5/24/2021 11:47:04 AM:::HomeGraph Execute device id: 88|00022231|MCE|1465|6
+5/24/2021 11:57:10 AM:::
+Portal
+5/24/2021 11:57:10 AM:::ResponseType: : 
+ClientId: : 
+RedirectUri: : 
+State: : 
+UserLocale: : 
+5/24/2021 11:57:28 AM:::
+*****HomeGraph*****
+5/24/2021 11:57:28 AM:::HomeGraph Header: cb04e04ae4492aa257b26e1a7b83cfef
+5/24/2021 11:57:28 AM:::HomeGraph Input:
+{
+  "inputs": [
+    {
+      "context": {
+        "locale_country": "US",
+        "locale_language": "en"
+      },
+      "intent": "action.devices.EXECUTE",
+      "payload": {
+        "commands": [
+          {
+            "devices": [
+              {
+                "customData": {
+                  "barValue": true,
+                  "bazValue": "SC",
+                  "fooValue": 74
+                },
+                "id": "53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="
+              }
+            ],
+            "execution": [
+              {
+                "command": "action.devices.commands.ActivateScene",
+                "params": {
+                  "deactivate": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "9909898996246516110"
+}
+5/24/2021 11:57:28 AM:::Checking token in header
+5/24/2021 11:57:28 AM:::Checking third party is valid
+5/24/2021 11:57:36 AM:::HomeGraph Execute device id: 88|00022231|MCE|1465|6
+5/24/2021 11:58:02 AM:::Command: action.devices.commands.ActivateScene
+5/24/2021 11:58:23 AM:::Data to control: 1
+5/24/2021 11:59:52 AM:::HomeGraph ServerAddress list: server.acis.com.vn
+5/24/2021 12:00:25 PM:::Error: Can not author to cloud!!!
+5/24/2021 12:00:32 PM:::
+*****HomeGraph*****
+5/24/2021 12:00:32 PM:::HomeGraph Header: cb04e04ae4492aa257b26e1a7b83cfef
+5/24/2021 12:00:32 PM:::HomeGraph Input:
+{
+  "inputs": [
+    {
+      "context": {
+        "locale_country": "US",
+        "locale_language": "en"
+      },
+      "intent": "action.devices.EXECUTE",
+      "payload": {
+        "commands": [
+          {
+            "devices": [
+              {
+                "customData": {
+                  "barValue": true,
+                  "bazValue": "SC",
+                  "fooValue": 74
+                },
+                "id": "53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="
+              }
+            ],
+            "execution": [
+              {
+                "command": "action.devices.commands.ActivateScene",
+                "params": {
+                  "deactivate": false
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "requestId": "9909898996246516110"
+}
+5/24/2021 12:00:32 PM:::Checking token in header
+5/24/2021 12:00:32 PM:::Checking third party is valid
+5/24/2021 12:00:35 PM:::HomeGraph Execute device id: 88|00022231|MCE|1465|6
+5/24/2021 12:00:35 PM:::Command: action.devices.commands.ActivateScene
+5/24/2021 12:00:35 PM:::Data to control: 1
+5/24/2021 12:00:35 PM:::HomeGraph ServerAddress list: server.acis.com.vn
+5/24/2021 12:01:43 PM:::Send data: 00022231$MCE$0$6
+5/24/2021 12:01:43 PM:::Data response: 6:0
+5/24/2021 12:02:57 PM:::HomeGraph CmdOK: {"ids":["53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="],"status":"SUCCESS","states":{}}
+5/24/2021 12:02:57 PM:::HomeGraph reponse: {"requestId":"9909898996246516110","payload":{"commands":[{"ids":["53J3ksFKc81plRxjTxbigZ9OsRk+gD+RdVToQbdzfmI="],"status":"SUCCESS","states":{}}]}}

@@ -1,0 +1,50 @@
+﻿@{
+    ViewBag.Title = "Portal";
+    Layout = "~/Views/Shared/_LayoutPageLogin.cshtml";
+}
+<div class="acis-title">
+    <h1>ACIS SMART HOME</h1>
+    <img src="~/images/logo.png" alt="Acis">
+    <div class="acis-des">
+        <p>By signing in, you are authorizing Google to access your devices</p>
+        <p>Sign in with your account and password</p>
+    </div>
+</div>
+<div class="acis-login">
+    <div class="bg-layer">
+        <form action="Login" method="post">
+            <div class="acis-field-text">
+                <label><i class="fa fa-user" aria-hidden="true"></i> Master Account </label>
+                <input type="text" name="MasterAccount" placeholder="Enter Master Account" required="" />
+            </div>
+            <div class="acis-field-text">
+                <label><i class="fa fa-user" aria-hidden="true"></i> Control Account </label>
+                <input type="text" name="ControlAccount" placeholder="Enter Control Account" required="" />
+            </div>
+            <div class="acis-field-text">
+                <label><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password </label>
+                <input type="password" name="Password" placeholder="Enter Password" required="" />
+                <table>
+                    <tr>
+                        <td colspan="2">
+                            <input type="hidden" name="client_id" value="@ViewData["ClientId"]" />
+                            <input type="hidden" name="redirect_uri" value="@ViewData["RedirectUri"]" />
+                            <input type="hidden" name="response_type" value="@ViewData["ResponseType"]" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <input type="submit" value="LOGIN">
+            </div>
+        </form>
+    </div>
+</div>
+<div class="acis-footer">
+    <p>
+        Design by
+        <a href="https://acis.com.vn/" target="_blank">ACIS</a>
+    </p>
+</div>
+
+

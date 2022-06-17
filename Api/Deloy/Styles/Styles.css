@@ -1,0 +1,140 @@
+﻿h1,
+body,
+html,
+html {
+    min-height: 100%;
+}
+
+h1 {
+    margin-left: 0em;
+    margin-top: 0em;
+    margin-right: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    margin: auto;
+    background-size: cover;
+}
+
+img {
+    object-fit: cover;
+    max-width: 30%;
+    max-height: 30%;
+    width: auto;
+    height: auto;
+}
+
+.acis-title {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 200;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+.acis-des {
+    font-size: 10px;
+    text-transform: capitalize;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.bg-layer {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top:25%;
+    width: 90%;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.acis-field-text {
+    flex-basis: 100%;
+    margin: 1.5em;
+    clear: both;
+    color: #fff;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.acis-login {
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
+.acis-login input[type="text"],
+.acis-login input[type="password"] {
+    width: 100%;
+    color: #fff;
+    outline: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border: none;
+    border: 1px solid #EEEEEE;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: transparent;
+}
+.acis-login input[type=submit] {
+    color: #fff;
+    width: 40%;
+    padding: 0.7em 0;
+    margin-left:30%;
+    margin-right:30%;
+    margin-bottom:5%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-weight: 600;
+    background: #fd5c63;
+    color: #fff;
+    border: 1px solid transparent;
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s all ease;
+    -webkit-transition: 0.5s all ease;
+    -moz-transition: 0.5s all ease;
+    -o-transition: 0.5s all ease;
+}
+.acis-login input[type=submit]:hover {
+    border: 1px solid #fd5c63;
+    color: #fd5c63;
+    background: transparent;
+}
+
+.acis-footer {
+    margin-top: 90%;
+    margin-bottom: 10%;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 100;
+    text-transform: capitalize;
+    text-shadow: 1px 1px 1px #000;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
